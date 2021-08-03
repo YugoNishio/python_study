@@ -7,5 +7,7 @@
 * ifと例外処理  
 * for  
 * while  
+* fanction  
+* class
 
 としていますが、変更するかもしれません.  
