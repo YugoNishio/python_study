@@ -1,8 +1,11 @@
-#
+#class内に関数を宣言する
 
 class GunkenKun:
     def __init__(self, strategy = "attacker"): #初期化メソッド
         self.strategy = strategy #引数で受け取ったstrategyの値を代入
+    def update(self, brain):
+        for 
+
 robot = GunkenKun() #変数robotにGunkenKunのインスタンスを代入(インスタンスの作成)
 print(robot.strategy)
 print("\n")
