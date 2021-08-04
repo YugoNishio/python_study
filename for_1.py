@@ -1,6 +1,8 @@
 #繰り返し処理(for)とリスト
-#for 目標変数 in 繰り返しの範囲:
-#   繰り返す内容
+"""
+for 目標変数 in 繰り返しの範囲:
+   繰り返す内容
+"""
 
 #例
 words = ['Japanese', 'English', 'French']
