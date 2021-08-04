@@ -1,5 +1,5 @@
 #試しに三角関数の計算をしてみる
-import math
+import math #標準ライブラリの中から数学モジュール(の内の一つ)を引っ張ってきた
 
-num = math.radians(float(input("値を入力してください-->")))
-print(math.cos(num))
+num = math.radians(float(input("角度を入力してください-->"))) #入力された文字をfloat型にしてラジアンに直す
+print(math.cos(num)) #90度の時6.123～e-17と出るが、これは10のマイナス17乗という意味なので実質ゼロ
