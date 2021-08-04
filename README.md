@@ -8,6 +8,6 @@
 * for  
 * while  
 * fanction  
-* class
+* class(未完成)
 
 としていますが、変更するかもしれません.  
