@@ -10,8 +10,7 @@ for word in words: #変数wordに0～2番目までの配列の中身が入る
     print(word)
 
 #繰り返し処理(for)とrange()
-#単に10回繰り返す
-
+#単に5回繰り返す
 for num in range(5): #変数numに0～4までの値が入る
     print(num)
 
