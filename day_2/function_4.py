@@ -7,6 +7,7 @@
 #メモリの使用量を抑える
 
 def one_GB():
+    global Cap, data, RemCap
     Cap = 1024
     data = 230
     RemCap = Cap - data
@@ -21,9 +22,9 @@ def one_GB():
     yield data, RemCap
 
 #try:
-for _ in range(3):
+for _ in one_GB():
     data_MB, Remaining_Capacity, n = one_GB()
     print("使用したデータ量は" + str(data_MB[0]) + "[MB]です")
-    print("残りタスクは" + str(Remaining_Capacity[1]) + "[MB]です")
-    print(n)
+    print("残りタスクは" + str(data_MB[1]) + "[MB]です")
+    #print(n)
 #except:
