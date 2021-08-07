@@ -12,7 +12,7 @@ def one_GB():
     RemCap = Cap - data
     yield data, RemCap
 
-    date = 370
+    data = 370
     RemCap -= data
     yield data, RemCap
 
@@ -23,7 +23,7 @@ def one_GB():
 #try:
 for _ in range(3):
     data_MB, Remaining_Capacity, n = one_GB()
-    print("使用したデータ量は" + str(data_MB) + "[MB]です")
-    print("残りタスクは" + str(Remaining_Capacity) + "[MB]です")
+    print("使用したデータ量は" + str(data_MB[0]) + "[MB]です")
+    print("残りタスクは" + str(Remaining_Capacity[1]) + "[MB]です")
     print(n)
 #except:
