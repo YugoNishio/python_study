@@ -26,4 +26,4 @@ def Input():
 
 Input() #実行
 
-#関数の処理を一時停止させるもの"yeild"(function_4.pyに続く…)
+#関数の処理を一時停止させるもの"yeild"と"generator関数"について(function_4.pyに続く…)
