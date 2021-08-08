@@ -1,23 +1,23 @@
-#classの定義
-"""
-class クラス名:
-   def __init__(self,引数2,引数3): #初期化メソッド
-       self.変数名1 = 初期値 #インスタンス変数の初期化
-       self.変数名2 = 初期値 #インスタンス変数の初期化
-"""
-#インスタンス変数にアクセスする
-"""
-インスタンス名.変数名
+#classについて
+"""用語
+クラス:オブジェクトを定義する(どんなオブジェクトなのかの説明)
+メソッド:クラス内にある関数
+オブジェクト:変数の一種、様々な値・処理を一括りしたもの、大抵クラスが元
+オブジェクトの生成:クラスからオブジェクトを作ること/インスタンス生成とも呼ぶ(class_2.py)
 """
 
-class GunkenKun:
-    def __init__(self, strategy = "attacker"): #初期化メソッド
-        self.strategy = strategy #引数で受け取ったstrategyの値を代入
-robot = GunkenKun() #変数robotにGunkenKunのインスタンスを代入(インスタンスの作成)
-print(robot.strategy)
-print("\n")
+class Planet: #オブジェクトの定義 普通クラス名の先頭は大文字
+    def earth(self): #メソッド 第一引数は必ずself(慣例)
+        print("地球は過ごしやすい") #humanメソッドの実行内容
+        self.mars('寒すぎる') #carメソッドの呼び出し 同じオブジェクト(earth)内なのでself(第一引数の利用)
 
-robot.strategy = "defender" #インスタンス変数の値をdefenderに更新
-print(robot.strategy)
+    def mars(self, message): #メソッド
+        print('火星は' + message) #引数を出力 ""でも''でも文字列と認識されるようです
 
-#class内に関数を宣言する(クラス内の関数をメソッドと呼びます)(class_2.pyに続く…)
+    def venus(self): #venusは呼び出されていないので実行されない.試しに呼び出してみましょう
+        print("金星は暑すぎる")
+
+planet = Planet() #オブジェクトの生成(今回のオブジェクトはspace) オブジェクト名 = クラス名()
+planet.earth() #メソッドの呼び出し(実行) オブジェクト名.メソッド名()
+
+#コンストラクタ関数について(class_2.pyに続く…)
