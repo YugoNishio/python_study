@@ -22,3 +22,5 @@ planet_e.planet_info() #メソッドの呼び出し(インスタンス(オブジ
 planet_m.planet_info()
 planet_v.planet_info()
 planet_s.planet_info()
+
+#クラス変数の性質について(class_4.pyに続く…)
