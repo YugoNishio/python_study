@@ -9,7 +9,7 @@
 class Planet: #オブジェクトの定義 普通クラス名の先頭は大文字
     def earth(self): #メソッド 最低1つ引数が必要な為、第一引数はself(慣例)
         print("地球は過ごしやすい") #humanメソッドの実行内容
-        self.mars('寒すぎる') #carメソッドの呼び出し 同じオブジェクト(earth)内なのでself(第一引数の利用)
+        self.mars('寒すぎる') #marsメソッドの呼び出し 同じオブジェクト(earth)内なのでself(第一引数の利用)
 
     def mars(self, message): #メソッド
         print('火星は' + message) #引数を出力 ""でも''でも文字列と認識されるようです
