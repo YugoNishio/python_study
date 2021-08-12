@@ -1,8 +1,10 @@
 ## python_study
 # python勉強会用レポジトリ
 ---
-第一回資料(https://docs.google.com/presentation/d/1LWp7kidmwQ24i9mBel-E2Txd_tqx39Fp2iT87ip7L7M/edit#slide=id.p)  
-第二回資料(https://docs.google.com/presentation/d/1Pq4j-2i-6Nr5H0fc0O0Dd4XFFPIInwnJdU8If8E-KiM/edit#slide=id.p)  
+第一回資料  
+(https://docs.google.com/presentation/d/1LWp7kidmwQ24i9mBel-E2Txd_tqx39Fp2iT87ip7L7M/edit#slide=id.p)  
+第二回資料  
+(https://docs.google.com/presentation/d/1Pq4j-2i-6Nr5H0fc0O0Dd4XFFPIInwnJdU8If8E-KiM/edit#slide=id.p)  
 
 学習の流れは、  
 * inputとprint  
