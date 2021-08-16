@@ -20,7 +20,7 @@ class Circle: #オブジェクトの定義: コンストラクタを定義する
         #コンストラクタの第一引数selfはコンストラクタによって生成されるオブジェクト(インスタンス)自身(今回はcircle)
         print("コンストラクタが呼び出されました") #引数なしのコンストラクタ
         self.radius = radius #インスタンス変数の初期化
-    
+
     def area(self): #メソッド
         return radius * radius * 3.14 #circle.area()の値はコレ
 
