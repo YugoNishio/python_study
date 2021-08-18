@@ -2,13 +2,13 @@
 """用語
 オーバーライド:親クラスのメソッドを子クラスで再定義する行為(要はメソッドの上書き)
 """
-class Planet: #親クラス
+class Planet: #スーパークラス(親クラス)
     def __init__(self, name, orbital_plane = 'same', orbit = 'circle'):
-        self.name = name
-        self.orbital_plane = orbital_plane
-        self.orbit = orbit
+        self.name = 'Earth'
+        self.orbital_plane = 'same'
+        self.orbit = 'circle'
 
-    @property
+    @property #なんとなくプロパティのゲッター使用
     def common(self):
         return self.name, self.orbital_plane, self.orbit
 
@@ -19,7 +19,7 @@ class Planet: #親クラス
         environment = "----"
         print(earth.common[0] + "って" + environment + "ですよね")
     
-class Earth(Planet): #子クラス
+class Earth(Planet): #サブクラス(子クラス)
     def environment(self): #オーバーライドしたメソッド
         environment = "過ごしやすい"
         print(earth.common[0] + "って" + environment + "ですよね")

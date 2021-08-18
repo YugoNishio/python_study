@@ -1,11 +1,12 @@
 #継承(コンストラクタ(初期化メソッド)のオーバーライド)
+
+"""super()の書き方
+def __init__(self):
+        super().__init__(value_1, value_2, value_3)
 """
-def __init__(self, name, orbital_plane, orbit):
-        super().__init__(name, orbital_plane, orbit)
 
-
-class Planet: #親クラス
-    def __init__(self, name, orbital_plane, orbit):
+class Planet: #スーパークラス
+    def __init__(self, name = 'Earth', orbital_plane = 'same', orbit = 'circle'):
         self.name = name
         self.orbital_plane = orbital_plane
         self.orbit = orbit
@@ -14,9 +15,9 @@ class Planet: #親クラス
     def common(self):
         return self.name, self.orbital_plane, self.orbit      
 
-class Earth(Planet): #子クラス
-    pass #親クラスの内容をそのまま実行するなら子クラス内に何も書かない
+class Mars(Planet): #サブクラス
+    def __init__(self):
+        super().__init__('Mars') #インスタンス変数の再設定 引数[name]にMarsを代入
 
-earth = Earth('Earth', 'same', 'circle') #子クラスをインスタンス化してみる
+earth = Mars() #子クラスをインスタンス化してみる
 print("名前:" + earth.common[0], "軌道面:" + earth.common[1], "軌道:" + earth.common[2]) #親クラス(Planet)が反映
-"""
