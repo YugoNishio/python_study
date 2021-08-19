@@ -25,32 +25,36 @@ def プロパティ名(self, value):
     self.変数名 = value #引数名は適当
 """
 
-class Planet:
+class Earth:
     def __init__(self): #コンストラクタ
-        self.__name = 'Earth' #インスタンスの初期化
-        #self.half_size = half_size
-        self.__radius = 6371 #プライベート変数化しないと無限再帰処理に入る
+        self.__year = '16世紀' #インスタンスの初期化プライベート変数化しないと無限再帰処理に入る
+        self.__established_theory = '天動説'
 
     @property
-    def name(self): #プロパティ名を[name]とする
+    def year(self): #プロパティ名を[name]とする
         pass #特にこの関数で実行する内容無し
-    @name.getter
-    def name(self):
-        return self.__name #nameメソッドがインスタンス変数の値を持つことになる
+    @year.getter
+    def year(self): #メソッドを通して属性値を取得
+        return self.__year #nameメソッドがインスタンス変数の値を持つことになる
 
     @property
-    def radius(self):
-        return self.__radius #プロパティとゲッターは一つにまとめられる
+    def established_theory(self):
+        return self.__established_theory #プロパティとゲッターは一つにまとめられる
     
-    @radius.setter
-    def radius(self, half_size):
-        if half_size is not 6371: # != でも動作
-            print("半径", half_size, "[km]ですか…それは現在の地球ではないですね!")
+    @established_theory.setter
+    def established_theory(self, change_theory): #メソッドを通して属性値を設定
+        self.__established_theory = change_theory #ここでインスタンス変数に値設定
 
-planet_e = Planet() #インスタンス生成
-print(planet_e.name, planet_e.radius) #ゲッター呼び出し(プライベート変数だが通常のように呼び出せる)
-#前回ではプライベート変数の呼び出しは [planet_e._Planet__name]のようにしてました.
-#planet_e.name = 'Mars' もちろんこの表記で書き換えは出来ない
-#planet_e._Planet__name = 'Mars' なおこの表記は直接インスタンス変数を参照しているため書き換えられる
+earth = Earth() #インスタンス生成
+print(earth.year, earth.established_theory) #ゲッター呼び出し(プライベート変数だが通常のように呼び出せる)
 
-planet_e.radius = 100 #セッターの呼び出し
+"""ちなみに…
+前回ではプライベート変数の呼び出しは [planet_e._Planet__name]のようにしてました.
+planet_e.name = 'Mars' もちろんこの表記で書き換えは出来ない
+planet_e._Planet__name = 'Mars' なおこの表記は直接インスタンス変数を参照しているため書き換えられる
+"""
+
+earth.established_theory = "地動説" #セッターの呼び出し
+print(earth.year, earth.established_theory) #定説の改変完了…
+
+#オブジェクト指向プログラミングと言えば"継承"(class_8.pyに続く…)
