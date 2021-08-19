@@ -28,3 +28,5 @@ class Mars(Planet): #サブクラス(子クラス)
 mars = Mars()
 mars.common('Mars') #Marsクラスのcommonメソッドの呼び出し
 mars.environment('Mars') #追加した定義の呼び出しもできる
+
+#継承しながら機能をいじる"オーバーライド"(class_9.pyに続く…)

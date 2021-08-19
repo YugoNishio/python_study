@@ -18,6 +18,10 @@ class Planet: #スーパークラス
 class Mars(Planet): #サブクラス
     def __init__(self):
         super().__init__('Mars') #インスタンス変数の再設定 引数[name]にMarsを代入
+        #スーパークラス[Planet]の__init__()メソッドを呼び出している
 
 earth = Mars() #子クラスをインスタンス化してみる
 print("名前:" + earth.common[0], "軌道面:" + earth.common[1], "軌道:" + earth.common[2]) #親クラス(Planet)が反映
+
+#他にも継承でできることはあるが割愛
+#継承を利用した機能"ポリモーフィズム"(class_11.pyに続く…)
