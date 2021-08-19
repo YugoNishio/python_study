@@ -14,7 +14,7 @@ class Planet: #スーパークラス(親クラス)
     def common(self, name, orbital_plane = 'same', orbit = 'circle'):
         print("名前:" + name, "軌道面:" + orbital_plane, "軌道:" + orbit)
 
-class Earth(Planet): #子クラス
+class Earth(Planet): #サブクラス(子クラス)
     pass #親クラスの内容をそのまま実行するなら子クラス内に何も書かない
 
 earth = Earth() #子クラスをインスタンス化してみる
